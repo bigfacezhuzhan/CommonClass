@@ -1,0 +1,42 @@
+1.初始化仓库
+	git init
+2.添加文件
+	git add -A
+3.提交文件到缓冲区
+	git commit -m "remark"
+4.推送文件到git
+	git push -u origin main
+5.更换分支名称
+	git branch -M "main"
+5.git remote add origin https://github.com/bigfacezhuzhan/CommonClass.git
+7.拉取代码：
+	git pull origin main
+
+异常问题：
+1:fatal: unable to access 'https://github.com/bigfacezhuzhan/CommonClass.git/': OpenSSL SSL_read: Connection was reset, errno 10054
+  git config --global http.sslVerify "false"
+
+2:fatal: unable to access : Failed to connect to github.com port 443: Timed out
+git remote set-url origin https://github.com/bigfacezhuzhan/Eonup.git
+
+账户：
+github UserName:bigfacezhuzhan PassWord：666zhan888 
+  token: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 永久
+git remote set-url origin https://<your_token>@github.com/<USERNAME>/<REPO>.git
+
+github UserName:bigfaceyangjin PassWord：970815zz
+  token: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 永久
+
+基础：
+git add -A //将所有文件添加到暂存区
+git commit -m "描述信息" //将暂存区文件提交到仓库
+git log --stat
+git checkout 文件名 //回滚已修改的文件
+git reset head ^1 //撤回上1次提交
+
+git checkout -b branchname //以当前分支为基础创建新分支
+git checkout branchnname //切换到该分支
+git merge branchname //将分支与当前分支合并
+git branch //列举所有分支
+git branch -D branchname //删除某分支
+git merge --abort //放弃这次合并
