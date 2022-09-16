@@ -34,12 +34,6 @@
         </register>
       </container>
 
-      <container name="ruanmouContainer">
-        <register type="System.Data.Entity.DbContext, EntityFramework" mapTo="Ruanmou.EF.Model.JDDbContext, Ruanmou.EF.Model"/>
-        <register type="Ruanmou.Bussiness.Interface.IBaseService`1,Ruanmou.Bussiness.Interface" mapTo="Ruanmou.Bussiness.Service.BaseService`1, Ruanmou.Bussiness.Service"/>
-        <register type="Ruanmou.Bussiness.Interface.ICategoryService,Ruanmou.Bussiness.Interface" mapTo="Ruanmou.Bussiness.Service.CategoryService, Ruanmou.Bussiness.Service"/>
-        <register type="Ruanmou.Bussiness.Interface.ICommodityService,Ruanmou.Bussiness.Interface" mapTo="Ruanmou.Bussiness.Service.CommodityService, Ruanmou.Bussiness.Service"/>
-      </container>
     </containers>
   </unity>
 </configuration>
