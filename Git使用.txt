@@ -21,11 +21,11 @@ git remote set-url origin https://github.com/bigfacezhuzhan/Eonup.git
 
 账户：
 github UserName:bigfacezhuzhan PassWord：666zhan888 
-  token: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 永久
+  token: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 11月15到期
 git remote set-url origin https://<your_token>@github.com/<USERNAME>/<REPO>.git
 
 github UserName:bigfaceyangjin PassWord：970815zz
-  token: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 永久
+  token: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  11月15到期
 
 基础：
 git add -A //将所有文件添加到暂存区
