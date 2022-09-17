@@ -3,9 +3,12 @@
     <section name="unity" type="Microsoft.Practices.Unity.Configuration.UnityConfigurationSection, Unity.Configuration"/>
   </configSections>
   <unity>
+<!--这句是配合Aop使用的，不用则注意不要写-->
     <sectionExtension type="Microsoft.Practices.Unity.InterceptionExtension.Configuration.InterceptionConfigurationExtension, Unity.Interception.Configuration"/>
     <containers>
       <container name="testContainer1">
+<!--使用容器创建接口配合EF使用时，记得将EF的Dbcontext添加进来-->
+        <register type="System.Data.Entity.DbContext,EntityFramework" mapTo="Eonup.EF.Model.ZhanProDbContext,Eonup.EF.Model"/>
         <register type="Ruanmou.Interface.IPhone,Ruanmou.Interface" mapTo="Ruanmou.Service.ApplePhone, Ruanmou.Service"/>
         <register type="Ruanmou.Interface.IPhone,Ruanmou.Interface" mapTo="Ruanmou.Service.AndroidPhone, Ruanmou.Service" name="Android"/>
         <register type="Ruanmou.Interface.IMicrophone, Ruanmou.Interface" mapTo="Ruanmou.Service.Microphone, Ruanmou.Service"/>
