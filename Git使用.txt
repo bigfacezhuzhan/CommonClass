@@ -21,9 +21,8 @@ git remote set-url origin https://github.com/bigfacezhuzhan/Eonup.git
 
 账户：
 github UserName:bigfacezhuzhan PassWord：666zhan888 
-  token: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 11月15到期
-	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
-	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 919
+  token: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
+
 git remote set-url origin https://<your_token>@github.com/<USERNAME>/<REPO>.git
 
 github UserName:bigfaceyangjin PassWord：970815zz
